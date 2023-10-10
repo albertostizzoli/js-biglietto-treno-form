@@ -19,13 +19,13 @@ button.addEventListener('click', function(){
     let eta = document.getElementById('eta').value;
 
     //Condizioni
-    if(eta < 18){
+    if(eta === 'Under18'){
         price = price - (price * discountUnder18); 
-    } else if(eta >= 65){
+    } else if(eta === 'Over65'){
         price = price - (price * discountOver65);
     }
 
-    const ticket = document.getElementById('ticket');
+    //const ticket = document.getElementById('ticket');
 }
 );
 
