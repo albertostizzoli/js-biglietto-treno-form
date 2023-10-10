@@ -5,7 +5,6 @@ console.dir(mioDiv);
 const kmPrice = 0.21;
 const discountUnder18 = 20/100;
 const discountOver65 = 40/100;
-let price = kmPrice * km;
 
 
 
@@ -18,6 +17,8 @@ button.addEventListener('click', function(){
     let km = document.getElementById('km').value;
     let eta = document.getElementById('eta').value;
 
+    let price = kmPrice * km;
+
     //Condizioni
     if(eta === 'Under18'){
         price = price - (price * discountUnder18); 
@@ -25,7 +26,7 @@ button.addEventListener('click', function(){
         price = price - (price * discountOver65);
     }
 
-    //const ticket = document.getElementById('ticket');
+    const ticket = document.getElementById('ticket');
 }
 );
 
