@@ -26,7 +26,7 @@ button.addEventListener('click', function(){
         price = price - (price * discountOver65);
     }
 
-    console.log(ticket);
+    console.log(price);
 
     const ticket = document.getElementById('ticket');
     ticket.innerHTML = `<strong>NOME PASSEGGERO</strong> ${nome}`;
@@ -50,11 +50,8 @@ button.addEventListener('click', function(){
 
     const biglietto = document.getElementById('biglietto');
     biglietto.innerHTML = `<strong>Costo biglietto</strong> ${price};`
-
-    console.log(price);
 }
 );
-
 
 
 
