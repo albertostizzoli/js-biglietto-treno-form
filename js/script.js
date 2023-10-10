@@ -17,7 +17,7 @@ button.addEventListener('click', function(){
     //Condizioni
     if(age < 18){
         price = price - (price * discountUnder18); 
-    } else if(age > 65){
+    } else if(age >= 65){
         price = price - (price * discountOver65);
     }
 
