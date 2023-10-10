@@ -26,6 +26,8 @@ button.addEventListener('click', function(){
         price = price - (price * discountOver65);
     }
 
+    console.log(price);
+
     const ticket = document.getElementById('ticket');
 }
 );
