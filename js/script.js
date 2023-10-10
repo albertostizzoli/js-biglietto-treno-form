@@ -4,10 +4,10 @@ const discountUnder18 = 20/100;
 const discountOver65 = 40/100;
 let price = kmPrice * km;
 
+
 // Bottone Genera
 
 const button = document.querySelector('.btn-primary');
-console.log(button);
 
 button.addEventListener('click', function(){
     let nome = document.getElementById('nome').value;
@@ -21,10 +21,8 @@ button.addEventListener('click', function(){
         price = price - (price * discountOver65);
     }
 
-    document.getElementById('ticket').innerHTML;
-
-
-
-
+    document.getElementById('ticket').innerHTML= `
+Il prezzo del biglietto è: ${price}&euro
+`;
 }
 );
