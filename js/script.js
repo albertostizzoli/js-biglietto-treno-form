@@ -28,6 +28,11 @@ button.addEventListener('click', function(){
 
     console.log(price);
 
+    const title = document.getElementById('title');
+    title.innerHTML = `<h3>DETTAGLIO PASSEGGERI`;
+
+    console.log(title);
+
     const ticket = document.getElementById('ticket');
     ticket.innerHTML = `<strong>NOME PASSEGGERO</strong> ${nome}`;
 
@@ -50,6 +55,8 @@ button.addEventListener('click', function(){
 
     const biglietto = document.getElementById('biglietto');
     biglietto.innerHTML = `<strong>Costo biglietto</strong> ${price};`
+
+    console.log(biglietto);
 }
 );
 
