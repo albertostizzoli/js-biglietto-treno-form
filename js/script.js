@@ -25,10 +25,10 @@ button.addEventListener('click', function(){
     }
 
     const ticket = document.getElementById('ticket');
-    const msgContainer = ticket.querySelector('div')
-    const box = ticket.querySelector('.box');
 }
 );
+
+
 
 
 
