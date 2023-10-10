@@ -20,9 +20,9 @@ button.addEventListener('click', function(){
     } else if(age >= 65){
         price = price - (price * discountOver65);
     }
-
-    document.getElementById('ticket').innerHTML= `
-Il prezzo del biglietto è: ${price}&euro
-`;
 }
 );
+
+document.getElementById('ticket').innerHTML= `
+Il prezzo del biglietto è: ${price}&euro
+`;
