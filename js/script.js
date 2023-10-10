@@ -29,6 +29,29 @@ button.addEventListener('click', function(){
     console.log(price);
 
     const ticket = document.getElementById('ticket');
+    ticket.innerHTML = `<strong>NOME PASSEGGERO</strong> ${nome}`;
+
+    console.log(nome);
+
+    const offer = document.getElementById('offer');
+    offer.innerHTML = `<strong>Offerte</strong> Biglietto Standard`;
+
+    console.log (offer);
+
+    const carrozza = document.getElementById('carrozza');
+    carrozza.innerHTML = `<strong>Carrozza</strong> 7`;
+
+    console.log(carrozza);
+
+    const codice = document.getElementById('codice');
+    codice.innerHTML = `<strong>Codice</strong> 92911`;
+
+    console.log(codice);
+
+    const biglietto = document.getElementById('biglietto');
+    biglietto.innerHTML = `<strong>Costo biglietto</strong> ${price};`
+
+
 }
 );
 
