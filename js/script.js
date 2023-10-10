@@ -8,6 +8,7 @@ const discountOver65 = 40/100;
 let price = kmPrice * km;
 
 
+
 // Bottone Genera
 
 const button = document.querySelector('.btn-primary');
@@ -18,9 +19,9 @@ button.addEventListener('click', function(){
     let eta = document.getElementById('eta').value;
 
     //Condizioni
-    if(age < 18){
+    if(eta < 18){
         price = price - (price * discountUnder18); 
-    } else if(age >= 65){
+    } else if(eta >= 65){
         price = price - (price * discountOver65);
     }
 
