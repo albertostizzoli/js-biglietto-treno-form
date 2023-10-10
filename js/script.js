@@ -1,3 +1,4 @@
+
 // Variabili
 const kmPrice = 0.21;
 const discountUnder18 = 20/100;
@@ -20,9 +21,11 @@ button.addEventListener('click', function(){
     } else if(age >= 65){
         price = price - (price * discountOver65);
     }
+
+    const ticket = document.getElementById('ticket');
+    const msgContainer = ticket.querySelector('div')
+    const box = ticket.querySelector('.box');
 }
 );
 
-document.getElementById('ticket').innerHTML= `
-Il prezzo del biglietto è: ${price}&euro
-`;
+
