@@ -1,3 +1,5 @@
+let mioDiv = document.getElementById('ticket');
+console.dir(mioDiv);
 
 // Variabili
 const kmPrice = 0.21;
@@ -27,5 +29,6 @@ button.addEventListener('click', function(){
     const box = ticket.querySelector('.box');
 }
 );
+
 
 
