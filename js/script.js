@@ -44,12 +44,12 @@ button.addEventListener('click', function(){
     console.log (offer);
 
     const carrozza = document.getElementById('carrozza');
-    carrozza.innerHTML = `<strong>Carrozza</strong> 7`;
+    carrozza.innerHTML = `<strong>Carrozza n'</strong> ${randomInteger (1,10)} `;
 
     console.log(carrozza);
 
     const codice = document.getElementById('codice');
-    codice.innerHTML = `<strong>Codice</strong> 92911`;
+    codice.innerHTML = `<strong>Codice CP n'</strong> ${randomInteger (100000,999999)} `;
 
     console.log(codice);
 
@@ -59,6 +59,9 @@ button.addEventListener('click', function(){
     console.log(biglietto);
 }
 );
+function randomInteger(min,max){
+    return Math.floor (Math.random() * (max -min + 1)) + min;
+}
 
 
 
